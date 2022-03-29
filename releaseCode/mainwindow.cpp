@@ -9,7 +9,7 @@ MainWindow::MainWindow(userDetails details, QWidget *parent)
 {
    this->details = details;
    ui->setupUi(this);
-   QPixmap item(QPixmap(QString::fromStdString(utils::getHomeDir()+"AleksAvData/ad0.jpg")));
+   QPixmap item(QPixmap(QString::fromStdString(utils::getHomeDir()+"/AleksAvData/ad0.jpg")));
    if(item.isNull())
    {
    logging.debug->logMessage("Advertising: Image not found");
